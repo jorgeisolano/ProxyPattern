@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- *
+ * Objeto del dominio
  * @author Jorge Ivan- Juan Pablo Solarte
  */
 public class Order {
@@ -21,17 +21,32 @@ public class Order {
     private State state;
     private List<Item> details;
 
+    /**
+     * Constructor con inicalizacion de ciertos atributos
+     * @param customer Curtomer creado
+     */
     public Order(Customer customer) {
         this.customer=customer;
         this.details = new ArrayList<Item>();
     }
     
+    /**
+     * Creacion de objeto item
+     * adicion de item a lista de items
+     * @param dish atributo de item
+     * @param amount numero de platos dentro de item
+     */
     public void addDish(Dish dish , int amount){
         Item item = new Item();
         item.setDish(dish);
         item.setAmount(amount);
         details.add(item);
     }
+    
+    /**
+     * costo total pedido
+     * @return int con suma de platos y costo de envio
+     */
     public int calculateTotal(){
         int total=0;
         this.despatch = 1500;

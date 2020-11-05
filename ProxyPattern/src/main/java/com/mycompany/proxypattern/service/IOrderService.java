@@ -8,7 +8,7 @@ import com.mycompany.facadepattern.access.IOrderRepository;
 
 
 /**
- *
+ * Interfaz de servicio
  * @author Jorge Ivan- Juan Pablo Solarte
  */
 public interface IOrderService {

@@ -1,15 +1,12 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.mycompany.facadepattern.access;
 
 import com.mycompany.facadepattern.domain.Order;
 
 /**
- *
- * @author Jorge Ivan
+ * Implementacion de repositorio por array
+ * (sin implmentar, objetivo principal del ejercicio Proxy)
+ * 
+ * @author Jorge Ivan, Juan Pablo Solarte
  */
 public class ArrayRepository implements IOrderRepository{
 

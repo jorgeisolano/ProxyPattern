@@ -6,7 +6,7 @@
 package com.mycompany.facadepattern.domain;
 
 /**
- *
+ *Objeto del dominio
  * @author Jorge Ivan- Juan Pablo Solarte
  */
 public class Item {

@@ -9,7 +9,7 @@ import com.mycompany.facadepattern.access.IOrderRepository;
 
 
 /**
- *
+ * Proxy
  * @author Jorge Ivan- Juan Pablo Solarte
  */
 public class ProxyClient {

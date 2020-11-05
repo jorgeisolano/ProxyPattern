@@ -9,7 +9,7 @@ import com.mycompany.facadepattern.app.Main;
 import com.mycompany.facadepattern.domain.*;
 import java.util.logging.Logger;
 /**
- *
+ * 
  * @author Jorge Ivan - Juan Pablo Solarte
  */
 public class OrderServiceLogger implements IOrderService {
@@ -19,6 +19,10 @@ public class OrderServiceLogger implements IOrderService {
         this.orderFacade = orderFacade;
     }
 
+    /**
+     * guardar en repositorio
+     * @param repo repositorio de la aplicacion
+     */
     @Override
     public void save(IOrderRepository repo) {
         repo.createOrder(orderFacade.getOrder());

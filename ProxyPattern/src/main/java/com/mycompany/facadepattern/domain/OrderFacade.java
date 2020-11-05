@@ -14,14 +14,17 @@ import com.mycompany.proxypattern.service.IOrderService;
 
 
 /**
- *
+ * Fachada de Gestion de ordenes
  * @author Jorge Ivan- Juan Pablo Solarte
  */
 public class OrderFacade implements IOrderService {
     
     private Order order;
     
-    
+    /**
+     * creacion de nueva orden
+     * @param customer cliente de la nueva orden creada
+     */
     public void createOrder(Customer customer){
         order = new Order(customer);
         order.setState(State.NEW);
